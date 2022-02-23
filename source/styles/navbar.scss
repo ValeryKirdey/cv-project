@@ -1,0 +1,36 @@
+.navbar {
+    .container {
+        @include flex-row;
+        justify-content: center;
+    }
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    &-menu {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        line-height: 22px;
+        font-size: 20px;
+        // color: $white;
+        // text-shadow: 1px 1px 2px $queenBlue, 0 0 1em $white, 0 0 0.2em $gold;
+        font-family: $primeryFontRegular;
+        padding: 0 10px;
+        &__list {
+            @include flex-row;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 0;
+            li a {
+                color: $queenBlue;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+svg path {
+    filter: url(#headerShadow);
+    -webkit-filter: url(#headerShadow);
+}
