@@ -1,0 +1,15 @@
+@import "./fonts.scss";
+@import "./constants.scss";
+@import "./mixin.scss";
+// @import "./navbar.scss";
+// @import "./section.scss";
+// @import "./footer.scss";
+body {
+    background: $background;
+    margin: 0px auto;
+    width: 100%;
+}
+
+h1 {
+    color: $gold;
+}
