@@ -1,2 +1,1 @@
-console.log('Example')
-;
+console.log("hi there")

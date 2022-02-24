@@ -3,7 +3,22 @@
 @import "./mixin.scss";
 @import "./navbar.scss";
 // @import "./section.scss";
+@import "./projects.scss";
 @import "./footer.scss";
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
 body {
     // background: $background;
     margin: 0px auto;

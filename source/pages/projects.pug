@@ -1,0 +1,15 @@
+
+- let cards = [{ title: 'Food Menu', copy: 'Making time a good time by making food the good food.', button: 'Project Link' }, { title: 'Ice-Cream', copy: 'Plan your next beach trip with these fabulous destinations', button: 'Project Link' }, { title: 'IT Company', copy: 'It\'s the desert you\'ve always dreamed of', button: 'Project Link' }, { title: 'Testing', copy: 'Seriously, straight up, just blast off into outer space today', button: 'Project Link' }, { title: 'Portfolio', copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains', button: 'Project Link' }, { title: 'Shoes Shop', copy: 'Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains', button: 'Project Link' }]
+
+
+mixin card(title, copy, button)
+  .card
+    .content
+      h2.title= title
+      p.copy= copy
+      a(href='https://github.com/ValeryKirdey/graduate-work' target="_blanck")
+        button.btn= button
+
+main.page-content
+  each card in cards
+    +card(card.title, card.copy, card.button)

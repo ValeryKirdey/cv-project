@@ -4,17 +4,40 @@ $queenBlue: #3D6792;
 $gold: #E0BA2C;
 $darkGold: #BA840E;
 $oldGold: #DDBD57;
-$bg: linear-gradient(39.97deg, #FEE440 0.79%, #00BBF9 79.29%);
+// $bg: linear-gradient(39.97deg, #FEE440 0.79%, #00BBF9 79.29%);
 $bgGold: linear-gradient(39.97deg, #FDD34F 0.79%, #00CAF0 79.29%);
 $bgYellow: linear-gradient(39.97deg, #FBC25E 0.79%, #0099B8 79.29%);
+$bgBlackBtn: linear-gradient( to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
 $background: #e0e0e0;
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 $primeryFontRegular: "Montserrat-Regular";
 $primeryFontBold: "Montserrat-Bold";
 $primeryFontExtraBold: "Montserrat-ExtraBold";
 $primeryFontItalic: "Montserrat-Italic";
 $primeryFontMedium: "Montserrat-Medium";
+$linksProjects: 'https://github.com/ValeryKirdey/dz2_valery',
+'https://github.com/ValeryKirdey/dz1_valery',
+'https://github.com/ValeryKirdey/it-studio',
+'https://github.com/ValeryKirdey/graduate-work',
+'https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/portfolio/',
+'https://github.com/ValeryKirdey/gulp-course-template/tree/feature/kirdey';
+$imageIds: 'food',
+'ice-cream',
+'it-company',
+'testing',
+'portfolio',
+'shoes-shop';
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Montserrat-Bold", sans-serif;
+    --font-serif: "Montserrat-Italic", serif;
+}
+
 $sl: 400px;
 $sm: 540px;
+$bp-md: 600px;
+$bp-lg: 800px;
 $md: 770px;
 $lg: 960px;
 $xl: 1140px;
