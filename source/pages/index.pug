@@ -5,12 +5,19 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(href="./styles/main.css", rel="stylesheet")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css")
+        link(rel="shortcut icon", href="./svg/fav.ico", type="image/x-icon")
         title My CV Project
     body 
         include ./navbar.pug
         include ./avatar.pug
+        include ./about.pug
+        include ./experience.pug
+        include ./education.pug
+        include ./skills.pug
         include ./code.pug
         include ./projects.pug
-        //- include ./section.pug
+        include ./hobbies.pug
+        include ./contacts.pug
         include ./footer.pug
         script(type="module" src="./js/script.js") 
