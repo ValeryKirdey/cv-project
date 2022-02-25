@@ -1,0 +1,8 @@
+.code {
+    @include flex-column;
+    @include title-text;
+}
+
+pre {
+    margin: 0;
+}

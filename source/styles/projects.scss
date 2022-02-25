@@ -1,8 +1,13 @@
+.projects {
+    @include flex-column;
+    @include title-text;
+}
+
 .page-content {
     display: grid;
     grid-gap: 1rem;
     padding: 1rem;
-    margin: 80px auto;
+    margin-bottom: 80px;
     font-family: var(--font-sans);
     @media (min-width: $bp-md) {
         grid-template-columns: repeat(2, 1fr);

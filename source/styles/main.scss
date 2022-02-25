@@ -2,25 +2,31 @@
 @import "./constants.scss";
 @import "./mixin.scss";
 @import "./navbar.scss";
+@import "./avatar.scss";
 // @import "./section.scss";
+@import "./code.scss";
 @import "./projects.scss";
 @import "./footer.scss";
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
-body {
-    display: grid;
-    place-items: center;
-}
-
+// body {
+//     display: grid;
+//     place-items: center;
+// }
 body {
     // background: $background;
     margin: 0px auto;
     width: 100%;
+}
+
+section {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
 }

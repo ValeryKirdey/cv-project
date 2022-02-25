@@ -1,7 +1,10 @@
 $white: #fff;
 $black: #0E0E13;
+$gray: #404245;
+$blue: #00BBF9;
 $queenBlue: #3D6792;
-$gold: #E0BA2C;
+$gold: #FEE440;
+// #E0BA2C;
 $darkGold: #BA840E;
 $oldGold: #DDBD57;
 // $bg: linear-gradient(39.97deg, #FEE440 0.79%, #00BBF9 79.29%);
@@ -27,6 +30,13 @@ $imageIds: 'food',
 'testing',
 'portfolio',
 'shoes-shop';
+$t: 1s;
+$d: 0.08em;
+$n: 3;
+$e: cubic-bezier(0.860,
+0.000,
+0.070,
+1.000);
 :root {
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
