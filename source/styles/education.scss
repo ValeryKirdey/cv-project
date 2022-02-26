@@ -1,4 +1,5 @@
 .education {
-    @include title-text;
-    @include text-style;
+    background: $bg;
+    // @include title-text;
+    // @include text-style;
 }

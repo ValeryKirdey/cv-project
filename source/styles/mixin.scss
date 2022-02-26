@@ -16,9 +16,11 @@
         text-align: center;
         font-family: $primeryFontMedium;
         &__year {
-            color: red;
+            font-size: 20px;
+            color: black;
             strong {
-                color: blue;
+                font-size: 25px;
+                color: $black;
             }
             font-weight: 600;
             small {
@@ -30,44 +32,60 @@
     }
 }
 
-@mixin title-text {
-    .animated {
-        font-family: Futura, sans-serif;
-        font-weight: 900;
-        font-size: 80px;
-        padding: 10px;
-        margin: 100px;
-        @keyframes ani {
-            0% {
-                transform: translate3d(0, 0, 0);
-                text-shadow: 0em 0em 0 $gold;
-                color: $gray;
-            }
-            30% {
-                transform: translate3d(0, 0, 0);
-                text-shadow: 0em 0em 0 $gold;
-                color: $gray;
-            }
-            70% {
-                transform: translate3d($d, -$d, 0);
-                text-shadow: -$d $d $gold;
-                color: $gray;
-            }
-            100% {
-                transform: translate3d($d, -$d, 0);
-                text-shadow: -$d $d $gold;
-                color: $gray;
-            }
-        }
-        span {
-            position: relative;
-            display: inline-block;
-            animation: ani $t infinite alternate $e;
-            @for $i from 1 through $n {
-                &:nth-last-child(#{$i}n) {
-                    animation-delay: -$t*$i/$n/2;
-                }
-            }
-        }
+@mixin skill-descr {
+    position: absolute;
+    height: 24rem;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    span:before {
+        content: url('../svg/ok.png');
     }
 }
+
+// @mixin title-text {
+//     .animated {
+//         font-family: Futura, sans-serif;
+//         font-weight: 900;
+//         font-size: 80px;
+//         padding: 10px;
+//         margin: 100px;
+//         @keyframes ani {
+//             0% {
+//                 transform: translate3d(0, 0, 0);
+//                 text-shadow: 0em 0em 0 $gold;
+//                 color: $gray;
+//             }
+//             30% {
+//                 transform: translate3d(0, 0, 0);
+//                 text-shadow: 0em 0em 0 $gold;
+//                 color: $gray;
+//             }
+//             70% {
+//                 transform: translate3d($d, -$d, 0);
+//                 text-shadow: -$d $d $gold;
+//                 color: $gray;
+//             }
+//             100% {
+//                 transform: translate3d($d, -$d, 0);
+//                 text-shadow: -$d $d $gold;
+//                 color: $gray;
+//             }
+//         }
+//         span {
+//             position: relative;
+//             display: inline-block;
+//             animation: ani $t infinite alternate $e;
+//             @for $i from 1 through $n {
+//                 &:nth-last-child(#{$i}n) {
+//                     animation-delay: -$t*$i/$n/2;
+//                 }
+//             }
+//         }
+//     }
+// }
