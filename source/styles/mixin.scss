@@ -43,9 +43,22 @@
     @include flex-column;
     justify-content: center;
     align-items: center;
-    span:before {
-        content: url('../svg/ok.png');
+    span::before {
+        content: url(../svg/ok.png);
     }
+}
+
+@mixin skill-descr-column {
+    position: absolute;
+    height: 15rem;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
 }
 
 // @mixin title-text {

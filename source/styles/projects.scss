@@ -7,10 +7,10 @@
     padding: 1rem;
     margin-bottom: 80px;
     font-family: var(--font-sans);
-    @media (min-width: $bp-md) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media (min-width: $bp-lg) {
+    // @media (min-width: $md) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+    @media (min-width: $lg) {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -26,7 +26,7 @@
     color: $background;
     background-color: $background;
     box-shadow: 4.7px 3px 2.7px rgba(0, 0, 0, 0.076), 11.2px 7.3px 6.5px rgba(0, 0, 0, 0.098), 21.2px 13.8px 12.3px rgba(0, 0, 0, 0.11), 37.7px 24.6px 21.9px rgba(0, 0, 0, 0.12), 70.6px 46px 40.9px rgba(0, 0, 0, 0.129), 169px 110px 98px rgba(0, 0, 0, 0.14);
-    @media (min-width: $bp-md) {
+    @media (min-width: $md) {
         height: 350px;
     }
     &:before {
@@ -109,7 +109,7 @@
     }
 }
 
-@media (hover: hover) and (min-width: $bp-md) {
+@media (hover: hover) and (min-width: $md) {
     .card:after {
         transform: translateY(0);
     }

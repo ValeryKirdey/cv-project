@@ -20,6 +20,9 @@
             }
             .skills-bar {
                 padding: 25px 30px;
+                @media (max-width: $lg) {
+                    padding: 0px 30px;
+                }
             }
             .skills-bar .bar {
                 margin: 26px 0;
@@ -42,6 +45,9 @@
                 transform: scaleX(0);
                 transform-origin: left;
                 animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+                @media (max-width: $lg) {
+                    width: 73vw;
+                }
             }
             .bar .progress-line span {
                 position: absolute;
@@ -112,25 +118,50 @@
             .progress-line .pug::after {
                 content: "57%";
             }
-            @media (max-width: 700px) {
-                .skills-box {
-                    width: 80%;
-                }
-                .skills-bar .bar .progress-line {
-                    width: 100%;
-                }
-            }
         }
         &__lang {
             position: relative;
             .lang {
                 @include skill-descr;
+                &.eng::before {
+                    content: url(../svg/ok.png);
+                }
+                &.bel::before {
+                    content: url(../svg/ok.png);
+                }
+                &.ru::before {
+                    content: url(../svg/ok.png);
+                }
             }
         }
         &__soft {
             position: relative;
             .soft {
                 @include skill-descr;
+            }
+        }
+    }
+}
+
+@media(max-width: $lg) {
+    .skills {
+        &-list {
+            @include flex-column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            &__lang {
+                position: relative;
+                .lang {
+                    @include skill-descr-column;
+                }
+            }
+            &__soft {
+                position: relative;
+                .soft {
+                    @include skill-descr-column;
+                }
             }
         }
     }
