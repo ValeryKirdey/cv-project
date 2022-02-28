@@ -46,11 +46,12 @@
             top: 90%;
         }
         .btn:hover::before {
-            animation: aaa 0.7s 1;
+            animation: abc 0.7s 1;
             top: -10%;
             left: -10%;
+            -webkit-animation: abc 0.7s 1;
         }
-        @keyframes aaa {
+        @keyframes abc {
             0% {
                 left: -110%;
                 top: 90%;
