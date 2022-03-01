@@ -31,6 +31,7 @@
                     width: 90%;
                 }
                 .skills-bar .bar .info span {
+                    font-family: $primeryFontRegular;
                     font-size: 1rem;
                     font-weight: 500;
                 }
@@ -70,10 +71,10 @@
                     width: 78%;
                 }
                 .progress-line .css {
-                    width: 65%;
+                    width: 62%;
                 }
                 .progress-line .js {
-                    width: 28%;
+                    width: 16%;
                 }
                 .progress-line .scss {
                     width: 41%;
@@ -109,10 +110,10 @@
                     content: "78%";
                 }
                 .progress-line .css::after {
-                    content: "65%";
+                    content: "62%";
                 }
                 .progress-line .js::after {
-                    content: "28%";
+                    content: "16%";
                 }
                 .progress-line .scss::after {
                     content: "41%";
@@ -134,8 +135,13 @@
                 position: relative;
                 .lang {
                     @include skill-descr;
-                    .soft-text::before {
-                        content: '🗺';
+                    .soft-text {
+                        i {
+                            color: rgb(2, 175, 2);
+                        }
+                        &::before {
+                            content: '🗺';
+                        }
                     }
                 }
             }

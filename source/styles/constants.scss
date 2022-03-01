@@ -32,6 +32,11 @@ $imageIds: 'food',
 'ice-cream',
 'rickandmorty',
 'first-project';
+$burger-height: 30px;
+$burger-width: 60px;
+$burger-item: 5px;
+$burger-item-offset: $burger-height - $burger-item * 2;
+$burger-item-shadow: -1 * $burger-item - ($burger-item-offset - $burger-item) / 2;
 $t: 1s;
 $d: 0.08em;
 $n: 3;
