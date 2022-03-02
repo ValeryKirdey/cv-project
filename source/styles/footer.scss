@@ -22,21 +22,15 @@ footer {
         // text-shadow: 1px 1px 2px $queenBlue, 0 0 1em $white, 0 0 0.2em $gold;
         color: $queenBlue;
         font-family: $primeryFontRegular;
-        padding: 30px 0;
+        padding: 10px 0;
         &__github a {
             color: $queenBlue;
             text-decoration: none;
         }
         &__logo {
-            // background-image: url(../svg/rs_school_js.png);
-            // width: 150px;
-            // height: 50px;
-            // background-repeat: no-repeat;
-            img {
-                width: 150px;
-                height: 50px;
-                background-repeat: no-repeat;
-            }
+            @include flex-row;
+            width: 100px;
+            height: 65px;
         }
     }
 }

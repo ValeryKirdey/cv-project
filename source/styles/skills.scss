@@ -77,10 +77,10 @@
                     width: 16%;
                 }
                 .progress-line .scss {
-                    width: 41%;
+                    width: 35%;
                 }
                 .progress-line .pug {
-                    width: 57%;
+                    width: 43%;
                 }
                 .bar .progress-line span::before {
                     position: absolute;
@@ -116,10 +116,10 @@
                     content: "16%";
                 }
                 .progress-line .scss::after {
-                    content: "41%";
+                    content: "35%";
                 }
                 .progress-line .pug::after {
-                    content: "57%";
+                    content: "43%";
                 }
             }
             &__soft {

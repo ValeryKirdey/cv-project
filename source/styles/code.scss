@@ -5,7 +5,13 @@ pre {
     margin: 0;
 }
 
-.coder span {
-    text-decoration-color: red;
-    -moz-text-decoration-color: red;
+@media(max-width: $sm) {
+    pre {
+        @include flex-column;
+        justify-content: center;
+        // width: 200px;
+        .coder {
+            width: 70%;
+        }
+    }
 }
