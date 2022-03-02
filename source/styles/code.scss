@@ -1,6 +1,7 @@
-// .code {
-//     @include title-text;
-// }
+.code {
+    @include title-text;
+}
+
 pre {
     margin: 0;
 }
@@ -9,7 +10,6 @@ pre {
     pre {
         @include flex-column;
         justify-content: center;
-        // width: 200px;
         .coder {
             width: 70%;
         }

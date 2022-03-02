@@ -1,5 +1,5 @@
     .skills {
-        // @include title-text;
+        @include title-text;
         background: $queenBlue;
         font-size: 20px;
         color: $gray;
@@ -68,7 +68,7 @@
                     }
                 }
                 .progress-line .html {
-                    width: 78%;
+                    width: 69%;
                 }
                 .progress-line .css {
                     width: 62%;
@@ -77,10 +77,10 @@
                     width: 16%;
                 }
                 .progress-line .scss {
-                    width: 35%;
+                    width: 36%;
                 }
                 .progress-line .pug {
-                    width: 43%;
+                    width: 34%;
                 }
                 .bar .progress-line span::before {
                     position: absolute;
@@ -107,7 +107,7 @@
                     border-radius: 3px;
                 }
                 .progress-line .html::after {
-                    content: "78%";
+                    content: "69%";
                 }
                 .progress-line .css::after {
                     content: "62%";
@@ -116,10 +116,10 @@
                     content: "16%";
                 }
                 .progress-line .scss::after {
-                    content: "35%";
+                    content: "36%";
                 }
                 .progress-line .pug::after {
-                    content: "43%";
+                    content: "34%";
                 }
             }
             &__soft {

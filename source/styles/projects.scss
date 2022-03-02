@@ -1,6 +1,7 @@
-// .projects {
-//     @include title-text;
-// }
+.projects {
+    @include title-text;
+}
+
 .page-content {
     display: grid;
     grid-gap: 1rem;
@@ -89,6 +90,10 @@
     line-height: 1.35;
 }
 
+.link {
+    cursor: pointer;
+}
+
 .btn {
     cursor: pointer;
     margin-top: 1.5rem;
@@ -107,6 +112,30 @@
         outline: 1px dashed $gold;
         outline-offset: 3px;
     }
+    // &:nth-child(0) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(1) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(2) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(3) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(4) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(5) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(6) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(7) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
 }
 
 @media (hover: hover) and (min-width: $md) {
