@@ -1,5 +1,5 @@
 {
-  "name": "gulp-pug-scss-boilerplate",
+  "name": "gulp-pug-scss-cv-project",
   "version": "1.0.0",
   "description": "Boilerplate for compiling smart landing pages using gulp, pug, scss",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate.git"
+    "url": "git+https://github.com/ValeryKirdey/cv-project.git"
   },
   "devDependencies": {
     "browser-sync": "^2.26.14",
@@ -27,10 +27,10 @@
     "gulp-watch": "^5.0.1",
     "pump": "^3.0.0"
   },
-  "author": "Diana Yarmolyuk",
+  "author": "Valery Kirdey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate/issues"
+    "url": "https://github.com/ValeryKirdey/cv-project/issues"
   },
-  "homepage": "https://github.com/DziyanaYarmoliuk/gulp-pug-scss-boilerplate#readme"
+  "homepage": "https://github.com/ValeryKirdey/cv-project#readme"
 }
