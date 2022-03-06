@@ -1,5 +1,5 @@
 {
-  "name": "gulp-pug-scss-cv-project",
+  "name": "cv-project",
   "version": "1.0.0",
   "description": "Boilerplate for compiling smart landing pages using gulp, pug, scss",
   "main": "index.js",
