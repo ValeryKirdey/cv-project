@@ -1,43 +1,43 @@
-const gulp         = require('gulp'),
-    sass         = require('gulp-sass'),
-    browsersync  = require('browser-sync').create(),
-    del          = require('del'),
-    imagemin     = require('gulp-imagemin'),
+const gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    browsersync = require('browser-sync').create(),
+    del = require('del'),
+    imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
-    csso         = require('gulp-csso'),
-    pug          = require('gulp-pug'),
-    data         = require('gulp-data'),
-    htmlmin      = require('gulp-htmlmin'),
-    uglify       = require('gulp-uglify'),
-    concat       = require('gulp-concat'),
-    pump         = require('pump');
+    csso = require('gulp-csso'),
+    pug = require('gulp-pug'),
+    data = require('gulp-data'),
+    htmlmin = require('gulp-htmlmin'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    pump = require('pump');
 
 
 const path = {
-    build:    './build',
+    build: './build',
     dataJson: './source/data.json',
-    css:      {
-        source:      './source/styles/main.+(scss|sass)',
-        dest:        './build/styles/',
+    css: {
+        source: './source/styles/main.+(scss|sass)',
+        dest: './build/styles/',
         watchSource: './source/styles/**/*.scss',
     },
-    html:     {
+    html: {
         indexSource: './source/pages/*.pug',
-        dest:        './build/styles/',
+        dest: './build/styles/',
         watchSource: './source/pages/**/*.pug',
     },
-    scripts:  {
-        source:      './source/js/**/*',
-        dest:        './build/js/',
+    scripts: {
+        source: './source/js/**/*',
+        dest: './build/js/',
         watchSource: './source/js/**/*.js',
     },
-    images:   {
+    images: {
         source: './source/img/**/*',
-        dest:   './build/img/',
+        dest: './build/img/',
     },
-    fonts:    {
+    fonts: {
         source: './source/fonts/**/*',
-        dest:   './build/fonts/',
+        dest: './build/fonts/',
     },
 };
 
@@ -52,7 +52,7 @@ gulp.task('css', done => {
     gulp
         .src(path.css.source)
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+        .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(csso())
         .pipe(gulp.dest(path.css.dest))
         .pipe(browsersync.stream());
@@ -70,7 +70,7 @@ gulp.task('html', done => {
     gulp
         .src(path.html.indexSource)
         .pipe(pug())
-        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest(path.build))
         .pipe(browsersync.stream());
     done();
